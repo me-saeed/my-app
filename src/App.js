@@ -31,7 +31,7 @@ function App() {
       <section className="background firstSection">
         <div className="box-main">
           <div className="firstHalf">
-            <p className="text-big">The Future of Education Is Here</p>
+            <p className="text-big">The Future of Education is here !</p>
             <p className="text-small">
               In this World of 7 Billion People, We need to educate all of
               them.This is the future of an educated world and we are proud to
@@ -44,10 +44,22 @@ function App() {
           </div>
           <div className="secondHalf">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJtnWc5u-qNX9xhu1DLkGYls8HsTRABKGVw&usqp=CAU"
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSylvxTbvEPQvWsj4A2G16dsAq92W0mZWihsQ&usqp=CAU"
+              alt="logo"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="secRight">
+        <div className="paras">
+          <p className="sectionTag">The End of Your Search is here</p>
+          <p className="sectionSubTag">
+            Education brings a natural and lasting change in an individual’s
+            reasoning and ability to achieve the targeted goal. It facilitates
+            us to investigate our own considerations and thoughts and makes it
+            ready to express it in various shapes.
+          </p>
         </div>
       </section>
     </>
