@@ -1,9 +1,6 @@
-///import logo from "./logo.svg";
-import "./App.css";
-import logo from "./logo.png";
-import Box from "@mui/material/Box";
+import React from "react";
 
-function App() {
+export default function Home() {
   return (
     <>
       <nav className="navbar background">
@@ -126,5 +123,3 @@ function App() {
     </>
   );
 }
-
-export default App;

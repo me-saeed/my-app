@@ -150,7 +150,25 @@
   height: 500px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  max-width: 80px;
+  justify-content: center;
+  max-width: 80%;
   margin: auto;
+}
+.secLeft {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+  flex-direction: row-reverse;
+}
+.paras {
+  padding: 8px 65px;
+}
+.thumbnail img {
+  width: 250px;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin-top: 19px;
 }
