@@ -1,128 +1,24 @@
 ///import logo from "./logo.svg";
 import "./App.css";
-import logo from "./logo.png";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Box from "@mui/material/Box";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact.jsx";
+import Services from "./Services";
 
 function App() {
   return (
     <>
-      <nav className="navbar background">
-        <ul className="nav-list">
-          <div className="logo">
-            <img src={logo} alt="logo" />
-          </div>
-          <li>
-            <a href="#Home">Home</a>
-          </li>
-          <li>
-            <a href="#Services">Services</a>
-          </li>
-          <li>
-            <a href="#About">About Us</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact Us</a>
-          </li>
-        </ul>
-        <div className="rightNav">
-          <input type="text" name="Search" id="Search" />
-          <button className="btn btn-sm">Search</button>
-        </div>
-      </nav>
-      <section className="background firstSection">
-        <div className="box-main">
-          <div className="firstHalf">
-            <p className="text-big">The Future of Education is here !</p>
-            <p className="text-small">
-              In this World of 7 Billion People, We need to educate all of
-              them.This is the future of an educated world and we are proud to
-              say that the Future of Education is here.
-            </p>
-            <div className="buttons">
-              <button className="btn">Subscribe</button>
-              <button className="btn">Watch Video</button>
-            </div>
-          </div>
-          <div className="secondHalf">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSylvxTbvEPQvWsj4A2G16dsAq92W0mZWihsQ&usqp=CAU"
-              alt="logo"
-            />
-          </div>
-        </div>
-      </section>
-      <section className="secRight">
-        <div className="paras">
-          <p className="sectionTag text-big">
-            The End of Your Search is here !!
-          </p>
-          <p className="sectionSubTag text-small">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
-            esse est deleniti hic earum eos tenetur perferendis vero ad iure
-            omnis soluta exercitationem, accusamus nam ratione harum, nostrum,
-            perspiciatis porro molestiae voluptatibus repudiandae cupiditate!
-            Qui, veritatis error aliquid ex nostrum corporis ut eum laboriosam
-            eius sequi, voluptas quis dolore tempore totam hic rem esse
-            doloribus eaque sint! Minus perferendis nostrum temporibus incidunt
-            ullam quod suscipit, quo autem, consequuntur architecto inventore
-            nihil aliquam tempore, ipsa quidem fugiat veritatis.
-          </p>
-        </div>
-        <div className="thumbnail">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytX0WLTBgf-Ni1cTVfsTisoSCO6SMsI5tKQ&usqp=CAU"
-            alt=""
-          />
-        </div>
-      </section>
-
-      <section className="secLeft">
-        <div className="paras">
-          <p className="sectionTag text-big">
-            Education is the key to success !!
-          </p>
-          <p className="sectionSubTag text-small">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
-            esse est deleniti hic earum eos tenetur perferendis vero ad iure
-            omnis soluta exercitationem, accusamus nam ratione harum, nostrum,
-            perspiciatis porro molestiae voluptatibus repudiandae cupiditate!
-            Qui, veritatis error aliquid ex nostrum corporis ut eum laboriosam
-            eius sequi, voluptas quis dolore tempore totam hic rem esse
-            doloribus eaque sint! Minus perferendis nostrum temporibus incidunt
-            ullam quod suscipit, quo autem, consequuntur architecto inventore
-            nihil aliquam tempore, ipsa quidem fugiat veritatis.
-          </p>
-        </div>
-        <div className="thumbnail">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQweF-1KKKzGE4hcNI5sOEzAUnTZ1bjsRlvyg&usqp=CAU"
-            alt=""
-          />
-        </div>
-      </section>
-
-      <section className="secRight">
-        <div className="paras">
-          <p className="sectionTag text-big">No Pains | No Gains !!</p>
-          <p className="sectionSubTag text-small">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
-            esse est deleniti hic earum eos tenetur perferendis vero ad iure
-            omnis soluta exercitationem, accusamus nam ratione harum, nostrum,
-            perspiciatis porro molestiae voluptatibus repudiandae cupiditate!
-            Qui, veritatis error aliquid ex nostrum corporis ut eum laboriosam
-            eius sequi, voluptas quis dolore tempore totam hic rem esse
-            doloribus eaque sint! Minus perferendis nostrum temporibus incidunt
-            ullam quod suscipit, quo autem, consequuntur architecto inventore
-            nihil aliquam tempore, ipsa quidem fugiat veritatis.
-          </p>
-        </div>
-        <div className="thumbnail">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr_j4lFoGmPVSjC-0b02kRypfjfmA2uHNlaw&usqp=CAU"
-            alt=""
-          />
-        </div>
-      </section>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Services" element={<Services />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

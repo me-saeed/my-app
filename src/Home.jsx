@@ -1,31 +1,10 @@
 import React from "react";
+import Navbar from "./Components/Navbar";
 
 export default function Home() {
   return (
     <>
-      <nav className="navbar background">
-        <ul className="nav-list">
-          <div className="logo">
-            <img src={logo} alt="logo" />
-          </div>
-          <li>
-            <a href="#Home">Home</a>
-          </li>
-          <li>
-            <a href="#Services">Services</a>
-          </li>
-          <li>
-            <a href="#About">About Us</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact Us</a>
-          </li>
-        </ul>
-        <div className="rightNav">
-          <input type="text" name="Search" id="Search" />
-          <button className="btn btn-sm">Search</button>
-        </div>
-      </nav>
+      <Navbar name="Home" />
       <section className="background firstSection">
         <div className="box-main">
           <div className="firstHalf">
@@ -120,6 +99,11 @@ export default function Home() {
           />
         </div>
       </section>
+      <footer class="background">
+        <p class="text-footer">
+          copyright &copy; 2027 www.Wave.com All rights Reserved
+        </p>
+      </footer>
     </>
   );
 }
