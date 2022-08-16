@@ -23,6 +23,9 @@ function Navbar(props) {
         <li>
           <a href="/Contact">Contact Us</a>
         </li>
+        <li>
+          <a href="/Login">Login</a>
+        </li>
       </ul>
       <div className="rightNav">
         <input type="text" name="Search" id="Search" />

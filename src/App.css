@@ -280,6 +280,7 @@ fa fa-star checked style {
   transform: scale(1, 1.5);
   transition: 0.3s;
 }
+
 .buy-1 {
   text-align: center;
   font-size: 24px;
@@ -290,8 +291,61 @@ fa fa-star checked style {
   outline: none;
   cursor: pointer;
   margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.buy-2 {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.buy-3 {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.buy-4 {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .style {
   color: blue;
   width: 25px;
+}
+.buy-1 {
+  background: #2183a2;
+}
+.buy-2 {
+  background: purple;
+}
+.buy-3 {
+  background: orangered;
+}
+.buy-4 {
+  background: black;
 }

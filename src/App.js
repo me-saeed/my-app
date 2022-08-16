@@ -7,6 +7,7 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact.jsx";
 import Services from "./Services";
+import Login from "./Login";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>
