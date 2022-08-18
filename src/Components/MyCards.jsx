@@ -6,9 +6,9 @@ function MyCards(props) {
       <div className="gallery">
         <div className="content">
           <img className="imagestyle" src={props.img} alt="" />
-          <h3 className="namestyle">{props.name}</h3>
-          <p>{props.desc}</p>
-          <p>We provide the best</p>
+          <h3 className="namestyle">{props.desc}</h3>
+          <p>{props.name}</p>
+          <p>{props.name}</p>
           <h6>$100.00</h6>
           <ul className="list-style">
             <li>

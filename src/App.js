@@ -8,6 +8,9 @@ import About from "./About";
 import Contact from "./Contact.jsx";
 import Services from "./Services";
 import Login from "./Login";
+import Navbar from "./Components/Navbar";
+import Signup from "./Signup";
+import Local from "./Local";
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/Services" element={<Local />} />
         </Routes>
       </BrowserRouter>
     </>

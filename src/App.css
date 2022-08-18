@@ -349,3 +349,12 @@ fa fa-star checked style {
 .buy-4 {
   background: black;
 }
+.body {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.7)
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9z3IXPITRxxry9GbvfqNdAX2oZsUZaakew&usqp=CAU);
+  background-size: cover;
+  /* background-blend-mode: darken; */
+  background-repeat: no-repeat;
+}
